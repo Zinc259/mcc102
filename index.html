@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side bar Lokalista</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+        <body>
+            <div class="sidebar">
+                <div class="logo_content">
+                    <div class="logo">
+                        <i class='bx bxs-shopping-bag-alt' ></i>
+                        <div class="logo_name">Lokalista</div>
+                    </div>
+                    <i class='bx bx-menu' id="btn"></i>
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <i class='bx bx-search' ></i>
+                        <input type="text" placeholder="Search...">
+                        <span class="tooltip">Search</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="popular">
+                            <i class='bx bx-grid-alt' ></i>
+                            <span class="links_name">Popular</span>
+                        </a>
+                        <span class="tooltip">Popular</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="food">
+                            <i class='bx bxs-bowl-rice' ></i>
+                            <span class="links_name">Food</span>
+                        </a>
+                        <span class="tooltip">Food</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="drinks">
+                            <i class='bx bxs-drink' ></i>
+                            <span class="links_name">Drinks</span>
+                        </a>
+                        <span class="tooltip">Drinks</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="medicine">
+                            <i class='bx bxs-capsule' ></i>
+                            <span class="links_name">Medicine</span>
+                        </a>
+                        <span class="tooltip">Medicine</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="electronics">
+                            <i class='bx bx-mobile' ></i>
+                            <span class="links_name">Electronics</span>
+                        </a>
+                        <span class="tooltip">Electronics</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="business">
+                            <i class='bx bxs-briefcase' ></i>
+                            <span class="links_name">Business</span>
+                        </a>
+                        <span class="tooltip">Business</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="groceries">
+                            <i class='bx bxs-cart' ></i>
+                            <span class="links_name">Groceries</span>
+                        </a>
+                        <span class="tooltip">Groceries</span>
+                    </li>
+                </ul>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" data-category="clothes">
+                            <i class='bx bxs-t-shirt' ></i>
+                            <span class="links_name">Clothes</span>
+                        </a>
+                        <span class="tooltip">Clothes</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="home_content">
+                <div class="text">Lokalista</div>
+            </div>
+
+            <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search");
+
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+
+            searchBtn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+            </script>
+
+            <div class="card_container" id="popular">
+                <div class="card">
+                    <img src="img1.jpg" alt="img1">
+                    <div class="card_content">
+                        <h3>Frost N' Chill</h3>
+                        <p>Milktea and Snacks</p>
+                        <p>Blk 6 lot 44 Phase 1 Brgy. Sapang Biabas</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>  
+                </div>
+                
+
+                <div class="card">
+                    <img src="img2.jpg" alt="img2">
+                    <div class="card_content">
+                    <h3>Tinny Teacup</h3>
+                    <p>Coffee Shop + Botique </P>
+                    <p>Camachiles Road</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img5.jpg" alt="img5">
+                    <div class="card_content">
+                    <h3>Casa Praha</h3>
+                    <p>Overnight Resort</p>
+                    <p>Blk 17 lot 1 Mauaque Resettlement</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img6.jpg" alt="img6">
+                    <div class="card_content">
+                    <h3>Saura Store</h3>
+                    <p>Blk 11 lot 15 Phase 2 Brgy. Sapang Biabas</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="card_container" id="food" >
+                <div class="card">
+                    <img src="img1.jpg" alt="img1">
+                    <div class="card_content" id="food">
+                        <h3>Frost N' Chill</h3>
+                        <p>Milktea and Snacks</p>
+                        <p>Blk 6 lot 44 Phase 1 Brgy. Sapang Biabas</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card_container" id="drinks">
+                <div class="card">
+                    <img src="img2.jpg" alt="img2">
+                    <div class="card_content">
+                    <h3>Tinny Teacup</h3>
+                    <p>Coffee Shop + Botique </P>
+                    <p>Camachiles Road</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_container" id="medicine">
+                <div class="card">
+                    <img src="img3.jpg" alt="img3">
+                    <div class="card_content">
+                    <h3>Real Med Pharmacy</h3>
+                    <p>Serving Smiles, Prescribing Welness</p>
+                    <p>Blk 74 lot 31 Mauaque Resettlement</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_container" id="electronics">
+                <div class="card">
+                    <img src="img4.jpg" alt="img4">
+                    <div class="card_content">
+                    <h3>FRG Electronics</h3>
+                    <p> Cellphone and Accessories</p>
+                    <p>Blk 19 Lot 5 Mauaque Resettlement</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_container" id="business">
+                <div class="card">
+                    <img src="img5.jpg" alt="img5">
+                    <div class="card_content">
+                    <h3>Casa Praha</h3>
+                    <p>Overnight Resort</p>
+                    <p>Blk 17 lot 1 Mauaque Resettlement</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_container" id="groceries">
+                <div class="card">
+                    <img src="img6.jpg" alt="img6">
+                    <div class="card_content">
+                    <h3>Saura Store</h3>
+                    <p>Blk 11 lot 15 Phase 2 Brgy. Sapang Biabas</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_container" id="clothes">
+                <div class="card">
+                    <img src="img7.jpg" alt="img7">
+                    <div class="card_content">
+                    <h3>Royal Clothing</h3>
+                    <p>Ukay-Ukay | Wholesale and Retail</p>
+                    <p>Blk 57 lot 23 Mauaque Resettlement</p>
+                    <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Function to show the correct category and hide others
+function showCategory(category) {
+    // Hide all card containers
+    let containers = document.querySelectorAll(".card_container");
+    containers.forEach(container => {
+        container.style.display = "none";
+    });
+
+    // Show the selected category
+    let selectedContainer = document.getElementById(category);
+    if (selectedContainer) {
+        selectedContainer.style.display = "flex"; // Make sure it aligns cards side by side
+    }
+}
+
+// Add click event listeners to the sidebar links
+let links = document.querySelectorAll(".nav_list a");
+links.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        let category = this.getAttribute("data-category");
+        showCategory(category);
+    });
+});
+
+// Show the 'popular' category by default
+showCategory("popular");
+
+            </script>
+        </body>
+    </html>
